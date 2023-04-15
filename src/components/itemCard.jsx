@@ -3,8 +3,9 @@ import {Rating} from "./rating";
 import {FaRupeeSign} from "react-icons/fa";
 import {BiCartAdd} from "react-icons/bi";
 
+/*Each item in the menu list in home page*/
 export const ItemCard = (props) => {
-    const {id, description, img_url, name, price, rating, size, toppings, isVeg} = props;
+    const {id, description, img_url, name, price, rating, size, toppings, isVeg, showModal} = props;
     return <div
         className="w-full bg-white rounded-xl shadow-lg aspect-square outline outline-4 outline-transparent hover:outline-Orange transition-[outline-color] duration-300 overflow-hidden font-bold">
         <div className="h-2/3 relative">
@@ -20,7 +21,9 @@ export const ItemCard = (props) => {
             <p className="flex flex-row mt-4 ml-2 items-center text-2xl font-black"><FaRupeeSign
                 className="mr-1"/>{price}</p>
             <button
-                className="absolute bottom-2 right-4 bg-Yellow rounded-full py-3 px-5 text-xl text-Green shadow-md hover:bg-YellowDark">
+                className="absolute bottom-2 right-4 bg-Yellow rounded-full py-3 px-5 text-xl text-Green shadow-md hover:bg-YellowDark"
+                onClick={e=>showModal(props)}
+            >
                 <BiCartAdd/></button>
         </div>
     </div>
