@@ -3,6 +3,7 @@ module.exports = {
     content: ["./src/**/*.{html,js,jsx}", "./public/*.html"],
     theme: {
         extend: {
+            // Adding custom colors to Tailwind
             colors: {
                 "Navy": "#1e212b",
                 "Platinum": "#eaece8",
@@ -11,6 +12,7 @@ module.exports = {
                 "Orange": "#ff8427",
                 "Green": "#202a1f"
             },
+            // Adding custom fonts to Tailwind
             fontFamily: {
                 "Lobster": 'Lobster',
                 "Nunito": 'Nunito'

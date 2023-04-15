@@ -1,5 +1,5 @@
 const initialState = {
-    data: null
+    data: [] // empty array denotes the empty cart instead of using null
 }
 
 export const cartDataReducer = (state = initialState, {type, payload}) => {

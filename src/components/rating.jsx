@@ -1,5 +1,7 @@
 import {ImStarFull, ImStarHalf} from "react-icons/im";
 
+
+/*Component to display star rating of a item*/
 export const Rating = ({rating}) => {
     const full = Math.floor(rating);
     const half = rating - full !== 0;
